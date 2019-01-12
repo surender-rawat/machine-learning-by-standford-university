@@ -1,0 +1,430 @@
+Warning: Class 'com.egencia.library.logging.logback.FluentdElasticsearchAppender' contains multiple getters for the same property 'layout'.
+Warning: Class 'com.egencia.library.logging.logback.FluentdElasticsearchAppender' contains multiple setters for the same property 'layout'.
+17:59:57,705 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+17:59:57,705 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+17:59:57,705 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/surawat/expedia/Expedia/auth/GIT/auth-lama/auth-lamda/auth-aws-lambdas/auth-incremental-batch/target/classes/logback.xml]
+17:59:57,773 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+17:59:59,186 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:59:59,202 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+17:59:59,269 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+17:59:59,269 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+17:59:59,269 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+17:59:59,271 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [com.egencia.library.logging.logback.FluentdElasticsearchAppender]
+17:59:59,276 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [EVENTLOG-FLUENTD-APPENDER]
+17:59:59,281 |-INFO in com.egencia.library.logging.logback.FluentdElasticsearchAppender[EVENTLOG-FLUENTD-APPENDER] - No layout set for the appender named [EVENTLOG-FLUENTD-APPENDER]. Using default: EventLogElasticsearchLayout
+17:59:59,639 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+17:59:59,641 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE-BATCH-REPORT]
+17:59:59,642 |-INFO in ch.qos.logback.core.FileAppender[FILE-BATCH-REPORT] - File property is set to [/tmp/authSyncReport]
+17:59:59,644 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word event with class [com.egencia.library.logging.logback.EventConverter]
+17:59:59,644 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [auth.sync.report] to INFO
+17:59:59,644 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [auth.sync.report] to false
+17:59:59,644 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE-BATCH-REPORT] to Logger[auth.sync.report]
+17:59:59,645 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.egencia] to INFO
+17:59:59,645 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.egencia] to false
+17:59:59,645 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[com.egencia]
+17:59:59,645 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [EVENTLOG-FLUENTD-APPENDER] to Logger[com.egencia]
+17:59:59,645 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to ERROR
+17:59:59,645 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+17:59:59,645 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [EVENTLOG-FLUENTD-APPENDER] to Logger[ROOT]
+17:59:59,645 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+17:59:59,646 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@7c0c77c7 - Registering current configuration as safe fallback point
+
+2019-01-04T18:00:01.404+0530 [main] INFO  com.egencia.service.config.InfrastructureConfiguration -
+				NA datasource url: jdbc:jtds:sqlserver://NSSQLINTMTTWEBCORPUS01.karmalab.net:1433;databaseName=MTTWebCorpUS
+Got {@timestamp=2019-01-04T12:30:01.404Z, level=INFO, bytes=107, logger=com.egencia.service.config.InfrastructureConfiguration, thread=main, text=NA datasource url: jdbc:jtds:sqlserver://NSSQLINTMTTWEBCORPUS01.karmalab.net:1433;databaseName=MTTWebCorpUS, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:01.830+0530 [main] INFO  com.egencia.service.config.InfrastructureConfiguration -
+				EU datasource url: jdbc:jtds:sqlserver://NSSQLINTECTWEB01.karmalab.net:1433;databaseName=ECTWeb
+Got {@timestamp=2019-01-04T12:30:01.830Z, level=INFO, bytes=95, logger=com.egencia.service.config.InfrastructureConfiguration, thread=main, text=EU datasource url: jdbc:jtds:sqlserver://NSSQLINTECTWEB01.karmalab.net:1433;databaseName=ECTWeb, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:09.576+0530 [main] INFO  com.egencia.utils.ReportHandler -
+				Got auth bucket name : null
+Got {@timestamp=2019-01-04T12:30:09.576Z, level=INFO, bytes=27, logger=com.egencia.utils.ReportHandler, thread=main, text=Got auth bucket name : null, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:10.273+0530 [main] INFO  com.egencia.library.configuration.configservice.manager.StripedConfigurationManagerBuilder -
+				Created Guava Cache based StripedConfigurationManager for managing user_service.domain_codes.user.status
+Got {@timestamp=2019-01-04T12:30:10.273Z, level=INFO, bytes=104, logger=com.egencia.library.configuration.configservice.manager.StripedConfigurationManagerBuilder, thread=main, text=Created Guava Cache based StripedConfigurationManager for managing user_service.domain_codes.user.status, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:10.291+0530 [main] INFO  com.egencia.commons.auth.ClientTokenManager -
+				Getting a new client access token...
+Got {@timestamp=2019-01-04T12:30:10.291Z, level=INFO, bytes=36, logger=com.egencia.commons.auth.ClientTokenManager, thread=main, text=Getting a new client access token..., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:12.300+0530 [main] INFO  com.egencia.commons.auth.ClientTokenManager -
+				Client access token retrieved successfully.
+Got {@timestamp=2019-01-04T12:30:12.300Z, level=INFO, bytes=43, logger=com.egencia.commons.auth.ClientTokenManager, thread=main, text=Client access token retrieved successfully., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:14.087+0530 [main] INFO  com.egencia.library.configuration.configservice.manager.impl.DefaultConfigServiceCacheLoader -
+				user_service.domain_codes.user.status has been loaded.
+Got {@timestamp=2019-01-04T12:30:14.087Z, level=INFO, bytes=54, logger=com.egencia.library.configuration.configservice.manager.impl.DefaultConfigServiceCacheLoader, thread=main, text=user_service.domain_codes.user.status has been loaded., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:14.457+0530 [main] INFO  com.egencia.library.configuration.configservice.manager.impl.DefaultConfigServiceCacheLoader -
+				auth_service.pii_data.filtering_enabled has been loaded.
+Got {@timestamp=2019-01-04T12:30:14.457Z, level=INFO, bytes=56, logger=com.egencia.library.configuration.configservice.manager.impl.DefaultConfigServiceCacheLoader, thread=main, text=auth_service.pii_data.filtering_enabled has been loaded., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:14.967+0530 [pool-2-thread-1] INFO  com.egencia.library.configuration.configservice.manager.impl.DefaultConfigServiceCacheLoader -
+				user_service.domain_codes.user.status has been updated.
+Got {@timestamp=2019-01-04T12:30:14.967Z, level=INFO, bytes=55, logger=com.egencia.library.configuration.configservice.manager.impl.DefaultConfigServiceCacheLoader, thread=pool-2-thread-1, text=user_service.domain_codes.user.status has been updated., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.105+0530 [main] ERROR com.egencia.commons.manifest.ManifestReader -
+				ServletContext is null, unable to read manifest file
+Got {@timestamp=2019-01-04T12:30:15.105Z, level=ERROR, bytes=52, logger=com.egencia.commons.manifest.ManifestReader, thread=main, text=ServletContext is null, unable to read manifest file, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.133+0530 [main] INFO  com.egencia.commons.application.ApplicationMetadataHolder -
+				Application machine name DELC02X50JJJG5L successfully picked up by ApplicationNameHolder
+Got {@timestamp=2019-01-04T12:30:15.133Z, level=INFO, bytes=88, logger=com.egencia.commons.application.ApplicationMetadataHolder, thread=main, text=Application machine name DELC02X50JJJG5L successfully picked up by ApplicationNameHolder, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.135+0530 [main] WARN  com.egencia.commons.application.ApplicationMetadataHolder -
+				The current 'application_name' could not be read from the environment. Please configure environment by providing info.build.artifact in app config yml file or by some other property source.
+Got {@timestamp=2019-01-04T12:30:15.135Z, level=WARN, bytes=189, logger=com.egencia.commons.application.ApplicationMetadataHolder, thread=main, text=The current 'application_name' could not be read from the environment. Please configure environment by providing info.build.artifact in app config yml file or by some other property source., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.137+0530 [main] WARN  com.egencia.commons.application.ApplicationMetadataHolder -
+				The current 'build_version' could not be read from the environment. Please configure environment by providing info.build.version in app config yml file or by some other property source.
+Got {@timestamp=2019-01-04T12:30:15.137Z, level=WARN, bytes=185, logger=com.egencia.commons.application.ApplicationMetadataHolder, thread=main, text=The current 'build_version' could not be read from the environment. Please configure environment by providing info.build.version in app config yml file or by some other property source., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.138+0530 [main] WARN  com.egencia.commons.application.ApplicationMetadataHolder -
+				The current 'build_date' could not be read from the environment. Please configure environment by providing info.build.time in app config yml file or by some other property source.
+Got {@timestamp=2019-01-04T12:30:15.138Z, level=WARN, bytes=179, logger=com.egencia.commons.application.ApplicationMetadataHolder, thread=main, text=The current 'build_date' could not be read from the environment. Please configure environment by providing info.build.time in app config yml file or by some other property source., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.140+0530 [main] WARN  com.egencia.commons.application.ApplicationMetadataHolder -
+				The current 'build_number' could not be read from the environment. Please configure environment by providing info.build.commit.id in app config yml file or by some other property source.
+Got {@timestamp=2019-01-04T12:30:15.140Z, level=WARN, bytes=186, logger=com.egencia.commons.application.ApplicationMetadataHolder, thread=main, text=The current 'build_number' could not be read from the environment. Please configure environment by providing info.build.commit.id in app config yml file or by some other property source., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.353+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				######################################## AUTH BATCH [START] ########################################
+Got {@timestamp=2019-01-04T12:30:15.353Z, level=INFO, bytes=100, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=######################################## AUTH BATCH [START] ########################################, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.355+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				git.branch=>master
+Got {@timestamp=2019-01-04T12:30:15.355Z, level=INFO, bytes=18, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=git.branch=>master, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.357+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				git.build.time=>2019-01-04T10:56:48+0530
+Got {@timestamp=2019-01-04T12:30:15.357Z, level=INFO, bytes=40, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=git.build.time=>2019-01-04T10:56:48+0530, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.358+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				git.commit.id=>1543eb15664757be6eaf0b8f28fae98a1bd5e34e
+Got {@timestamp=2019-01-04T12:30:15.358Z, level=INFO, bytes=55, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=git.commit.id=>1543eb15664757be6eaf0b8f28fae98a1bd5e34e, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.360+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				git.commit.time=>2018-12-21T23:30:04+0530
+Got {@timestamp=2019-01-04T12:30:15.360Z, level=INFO, bytes=41, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=git.commit.time=>2018-12-21T23:30:04+0530, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.361+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				batch.start.time=>Fri Jan 04 18:00:15 IST 2019
+Got {@timestamp=2019-01-04T12:30:15.361Z, level=INFO, bytes=46, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=batch.start.time=>Fri Jan 04 18:00:15 IST 2019, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.363+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				######################################## AUTH BATCH [End] ########################################
+Got {@timestamp=2019-01-04T12:30:15.363Z, level=INFO, bytes=98, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=######################################## AUTH BATCH [End] ########################################, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.364+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				starting batch job with parameters platform : EU
+Got {@timestamp=2019-01-04T12:30:15.364Z, level=INFO, bytes=48, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=starting batch job with parameters platform : EU, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.366+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				starting batch job with parameters pc : 5947467
+Got {@timestamp=2019-01-04T12:30:15.366Z, level=INFO, bytes=47, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=starting batch job with parameters pc : 5947467, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.367+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				starting batch job with parameters env : maui
+Got {@timestamp=2019-01-04T12:30:15.367Z, level=INFO, bytes=45, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=starting batch job with parameters env : maui, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.369+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				starting batch job with parameters authSyncrequired : true
+Got {@timestamp=2019-01-04T12:30:15.369Z, level=INFO, bytes=58, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=starting batch job with parameters authSyncrequired : true, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.370+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				starting batch job with parameters statusSyncRequired : true
+Got {@timestamp=2019-01-04T12:30:15.370Z, level=INFO, bytes=60, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=starting batch job with parameters statusSyncRequired : true, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.372+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				starting batch job with parameters roleSyncRequired : null
+Got {@timestamp=2019-01-04T12:30:15.372Z, level=INFO, bytes=58, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=starting batch job with parameters roleSyncRequired : null, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.373+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				starting batch job with parameters userCreationSyncRequired : true
+Got {@timestamp=2019-01-04T12:30:15.373Z, level=INFO, bytes=66, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=starting batch job with parameters userCreationSyncRequired : true, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.375+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				starting batch job with parameters SecuritySyncRequired : null
+Got {@timestamp=2019-01-04T12:30:15.375Z, level=INFO, bytes=62, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=starting batch job with parameters SecuritySyncRequired : null, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.377+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				starting batch job with parameters getSsoSecuritySyncRequired : null
+Got {@timestamp=2019-01-04T12:30:15.377Z, level=INFO, bytes=68, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=starting batch job with parameters getSsoSecuritySyncRequired : null, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.379+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				EU user profile Batch starting for profileCounter:5947467 
+Got {@timestamp=2019-01-04T12:30:15.379Z, level=INFO, bytes=58, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=EU user profile Batch starting for profileCounter:5947467 , machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:15.380+0530 [main] INFO  com.egencia.service.dao.BatchExecutionDAOImpl -
+				Removing  Batch Execution Token with Completed:batchIndexId:profile_count_id 
+Got {@timestamp=2019-01-04T12:30:15.380Z, level=INFO, bytes=77, logger=com.egencia.service.dao.BatchExecutionDAOImpl, thread=main, text=Removing  Batch Execution Token with Completed:batchIndexId:profile_count_id , machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:16.129+0530 [pool-2-thread-2] INFO  com.egencia.library.configuration.configservice.manager.impl.DefaultConfigServiceCacheLoader -
+				auth_service.pii_data.filtering_enabled has been updated.
+Got {@timestamp=2019-01-04T12:30:16.129Z, level=INFO, bytes=57, logger=com.egencia.library.configuration.configservice.manager.impl.DefaultConfigServiceCacheLoader, thread=pool-2-thread-2, text=auth_service.pii_data.filtering_enabled has been updated., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:21.021+0530 [main] INFO  com.egencia.service.dao.BatchExecutionDAOImpl -
+				INserting Batch Execution Token:batchIndexId:profile_count_id 
+Got {@timestamp=2019-01-04T12:30:21.021Z, level=INFO, bytes=62, logger=com.egencia.service.dao.BatchExecutionDAOImpl, thread=main, text=INserting Batch Execution Token:batchIndexId:profile_count_id , machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:21.456+0530 [main] INFO  com.egencia.service.dao.EUEntityMaximumValueDAOImpl -
+				Getting MaxUserId for Parameter USER_USER_LOG_ID
+Got {@timestamp=2019-01-04T12:30:21.456Z, level=INFO, bytes=48, logger=com.egencia.service.dao.EUEntityMaximumValueDAOImpl, thread=main, text=Getting MaxUserId for Parameter USER_USER_LOG_ID, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:24.180+0530 [main] INFO  com.egencia.service.dao.EUEntityMaximumValueDAOImpl -
+				Returning EU Max value for param:USER_USER_LOG_ID , value:5957472
+Got {@timestamp=2019-01-04T12:30:24.180Z, level=INFO, bytes=65, logger=com.egencia.service.dao.EUEntityMaximumValueDAOImpl, thread=main, text=Returning EU Max value for param:USER_USER_LOG_ID , value:5957472, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:24.181+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				maximum read counter in the ECTWEB for user profile is : 5957472
+Got {@timestamp=2019-01-04T12:30:24.181Z, level=INFO, bytes=64, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=maximum read counter in the ECTWEB for user profile is : 5957472, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:24.182+0530 [main] INFO  com.egencia.service.job.JobParameterChecker -
+				Batch EU_PROFILE batchMaxProcessUnit12000
+Got {@timestamp=2019-01-04T12:30:24.182Z, level=INFO, bytes=41, logger=com.egencia.service.job.JobParameterChecker, thread=main, text=Batch EU_PROFILE batchMaxProcessUnit12000, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:24.183+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				EU user profile Batch will run from (exclusive) : 5947467
+Got {@timestamp=2019-01-04T12:30:24.183Z, level=INFO, bytes=57, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=EU user profile Batch will run from (exclusive) : 5947467, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:24.184+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				EU user profile Batch will run to  (inclusive): 5957472
+Got {@timestamp=2019-01-04T12:30:24.184Z, level=INFO, bytes=55, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=EU user profile Batch will run to  (inclusive): 5957472, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:24.186+0530 [main] INFO  com.egencia.service.util.TimeConversionUtility -
+				2019/01/04 18:00:24
+Got {@timestamp=2019-01-04T12:30:24.186Z, level=INFO, bytes=19, logger=com.egencia.service.util.TimeConversionUtility, thread=main, text=2019/01/04 18:00:24, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:24.187+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				EU user profile Batch start at time : 1546585224187 Start DateTime Fri Jan 04 18:00:24 IST 2019
+Got {@timestamp=2019-01-04T12:30:24.187Z, level=INFO, bytes=95, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=EU user profile Batch start at time : 1546585224187 Start DateTime Fri Jan 04 18:00:24 IST 2019, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:33.696+0530 [main] INFO  com.egencia.service.writer.EUUserProfileMessageWriter -
+				Total Partition for User Profile 20
+Got {@timestamp=2019-01-04T12:30:33.696Z, level=INFO, bytes=35, logger=com.egencia.service.writer.EUUserProfileMessageWriter, thread=main, text=Total Partition for User Profile 20, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:33.711+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 10
+Got {@timestamp=2019-01-04T12:30:33.711Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 10, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:33.713+0530 [pool-1-thread-1] INFO  com.egencia.commons.auth.ClientTokenManager -
+				Getting a new client access token...
+Got {@timestamp=2019-01-04T12:30:33.713Z, level=INFO, bytes=36, logger=com.egencia.commons.auth.ClientTokenManager, thread=pool-1-thread-1, text=Getting a new client access token..., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:35.911+0530 [pool-1-thread-1] INFO  com.egencia.commons.auth.ClientTokenManager -
+				Client access token retrieved successfully.
+Got {@timestamp=2019-01-04T12:30:35.911Z, level=INFO, bytes=43, logger=com.egencia.commons.auth.ClientTokenManager, thread=pool-1-thread-1, text=Client access token retrieved successfully., machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:38.835+0530 [main] INFO  com.egencia.service.writer.EUUserProfileMessageWriter -
+				Total Partition for User Profile 10
+Got {@timestamp=2019-01-04T12:30:38.835Z, level=INFO, bytes=35, logger=com.egencia.service.writer.EUUserProfileMessageWriter, thread=main, text=Total Partition for User Profile 10, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:38.903+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  3810744
+Got {@timestamp=2019-01-04T12:30:38.903Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  3810744, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:38.906+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				User_Status_Report:  UserId:- 3810744 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE
+Got {@timestamp=2019-01-04T12:30:38.906Z, level=INFO, bytes=87, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=User_Status_Report:  UserId:- 3810744 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:38.908+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 7
+Got {@timestamp=2019-01-04T12:30:38.908Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 7, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:39.395+0530 [main] INFO  com.egencia.service.util.TimeConversionUtility -
+				2019/01/04 18:00:39
+Got {@timestamp=2019-01-04T12:30:39.395Z, level=INFO, bytes=19, logger=com.egencia.service.util.TimeConversionUtility, thread=main, text=2019/01/04 18:00:39, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:39.396+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				EU user profile batch job successful
+Got {@timestamp=2019-01-04T12:30:39.396Z, level=INFO, bytes=36, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=EU user profile batch job successful, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:39.398+0530 [main] INFO  com.egencia.service.dao.EntityStatsDAOImpl -
+				Updating the read counter maxReadCount:5957472 , indexName:index_auth_service_sync_batch_eu_maui , indexType:profile_count_id and batchIndexId:profile_count_id 
+Got {@timestamp=2019-01-04T12:30:39.398Z, level=INFO, bytes=160, logger=com.egencia.service.dao.EntityStatsDAOImpl, thread=main, text=Updating the read counter maxReadCount:5957472 , indexName:index_auth_service_sync_batch_eu_maui , indexType:profile_count_id and batchIndexId:profile_count_id , machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:39.931+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6289815
+Got {@timestamp=2019-01-04T12:30:39.931Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6289815, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:39.933+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				User_Status_Report:  UserId:- 6289815 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE
+Got {@timestamp=2019-01-04T12:30:39.933Z, level=INFO, bytes=87, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=User_Status_Report:  UserId:- 6289815 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:39.935+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 13
+Got {@timestamp=2019-01-04T12:30:39.935Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 13, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:40.545+0530 [main] INFO  com.egencia.service.dao.EntityStatsDAOImpl -
+				Creating statics for job:eu_user_profile indexName:index_auth_service_sync_batch_eu_maui , indexType:profile-stats , platform:EU . Start time:Fri Jan 04 12:30:24 IST 2019 , end time:Fri Jan 04 12:30:39 IST 2019 , completion time:15209, read start counter:5947467, read end counter:5957472
+Got {@timestamp=2019-01-04T12:30:40.545Z, level=INFO, bytes=288, logger=com.egencia.service.dao.EntityStatsDAOImpl, thread=main, text=Creating statics for job:eu_user_profile indexName:index_auth_service_sync_batch_eu_maui , indexType:profile-stats , platform:EU . Start time:Fri Jan 04 12:30:24 IST 2019 , end time:Fri Jan 04 12:30:39 IST 2019 , completion time:15209, read start counter:5947467, read end counter:5957472, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:40.851+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6524430
+Got {@timestamp=2019-01-04T12:30:40.851Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6524430, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:40.852+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				User_Status_Report:  UserId:- 6524430 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE
+Got {@timestamp=2019-01-04T12:30:40.852Z, level=INFO, bytes=87, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=User_Status_Report:  UserId:- 6524430 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:40.853+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 1
+Got {@timestamp=2019-01-04T12:30:40.853Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 1, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:40.963+0530 [main] INFO  com.egencia.service.dao.BatchExecutionDAOImpl -
+				updating Batch Execution Token:batchIndexId:auth.profile.read.count 
+Got {@timestamp=2019-01-04T12:30:40.963Z, level=INFO, bytes=68, logger=com.egencia.service.dao.BatchExecutionDAOImpl, thread=main, text=updating Batch Execution Token:batchIndexId:auth.profile.read.count , machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:40.964+0530 [main] INFO  com.egencia.service.dao.BatchExecutionDAOImpl -
+				Getting Batch Execution batchIndexId:profile_count_id
+Got {@timestamp=2019-01-04T12:30:40.964Z, level=INFO, bytes=53, logger=com.egencia.service.dao.BatchExecutionDAOImpl, thread=main, text=Getting Batch Execution batchIndexId:profile_count_id, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:41.590+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6540326
+Got {@timestamp=2019-01-04T12:30:41.590Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6540326, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:41.591+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 2
+Got {@timestamp=2019-01-04T12:30:41.591Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 2, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.028+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				EU user profile batch end time : Fri Jan 04 12:30:39 IST 2019
+Got {@timestamp=2019-01-04T12:30:42.028Z, level=INFO, bytes=61, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=EU user profile batch end time : Fri Jan 04 12:30:39 IST 2019, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.029+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				EU user profile batch completion time : 15209
+Got {@timestamp=2019-01-04T12:30:42.029Z, level=INFO, bytes=45, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=EU user profile batch completion time : 15209, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.030+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				EU user profile batch read started at : 5947467
+Got {@timestamp=2019-01-04T12:30:42.030Z, level=INFO, bytes=47, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=EU user profile batch read started at : 5947467, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.031+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				EU user profile batch read ended at  : 5957472
+Got {@timestamp=2019-01-04T12:30:42.031Z, level=INFO, bytes=46, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=EU user profile batch read ended at  : 5957472, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.032+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				EU user profile batch status is  : COMPLETED
+Got {@timestamp=2019-01-04T12:30:42.032Z, level=INFO, bytes=44, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=EU user profile batch status is  : COMPLETED, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.033+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				Total EU profile messages processed are : 2911
+Got {@timestamp=2019-01-04T12:30:42.033Z, level=INFO, bytes=46, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=Total EU profile messages processed are : 2911, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.034+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				*******************************************************************************************
+Got {@timestamp=2019-01-04T12:30:42.034Z, level=INFO, bytes=91, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=*******************************************************************************************, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.035+0530 [main] INFO  com.egencia.service.job.EUUserProfileJobHelper -
+				*******************************************************************************************
+Got {@timestamp=2019-01-04T12:30:42.035Z, level=INFO, bytes=91, logger=com.egencia.service.job.EUUserProfileJobHelper, thread=main, text=*******************************************************************************************, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.036+0530 [main] INFO  com.egencia.service.client.model.BatchApplicationStatus -
+				Returning job to status map:{eu_user_profile=successful}
+Got {@timestamp=2019-01-04T12:30:42.036Z, level=INFO, bytes=56, logger=com.egencia.service.client.model.BatchApplicationStatus, thread=main, text=Returning job to status map:{eu_user_profile=successful}, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.588+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6540487
+Got {@timestamp=2019-01-04T12:30:42.588Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6540487, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:42.590+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 15
+Got {@timestamp=2019-01-04T12:30:42.590Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 15, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:43.361+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6540623
+Got {@timestamp=2019-01-04T12:30:43.361Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6540623, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:43.362+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 8
+Got {@timestamp=2019-01-04T12:30:43.362Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 8, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:45.018+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6540807
+Got {@timestamp=2019-01-04T12:30:45.018Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6540807, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:45.019+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 19
+Got {@timestamp=2019-01-04T12:30:45.019Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 19, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:46.398+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6540970
+Got {@timestamp=2019-01-04T12:30:46.398Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6540970, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:46.400+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				User_Status_Report:  UserId:- 6540970 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE
+Got {@timestamp=2019-01-04T12:30:46.400Z, level=INFO, bytes=87, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=User_Status_Report:  UserId:- 6540970 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:46.401+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 11
+Got {@timestamp=2019-01-04T12:30:46.401Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 11, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:47.161+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6541127
+Got {@timestamp=2019-01-04T12:30:47.161Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6541127, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:47.162+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				User_Status_Report:  UserId:- 6541127 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE
+Got {@timestamp=2019-01-04T12:30:47.162Z, level=INFO, bytes=87, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=User_Status_Report:  UserId:- 6541127 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:47.163+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 0
+Got {@timestamp=2019-01-04T12:30:47.163Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 0, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:47.906+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6541288
+Got {@timestamp=2019-01-04T12:30:47.906Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6541288, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:47.908+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 11
+Got {@timestamp=2019-01-04T12:30:47.908Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 11, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:48.641+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6541442
+Got {@timestamp=2019-01-04T12:30:48.641Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6541442, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:48.642+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 0
+Got {@timestamp=2019-01-04T12:30:48.642Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 0, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:49.664+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6541629
+Got {@timestamp=2019-01-04T12:30:49.664Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6541629, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:49.665+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 14
+Got {@timestamp=2019-01-04T12:30:49.665Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 14, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:50.593+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6541813
+Got {@timestamp=2019-01-04T12:30:50.593Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6541813, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:50.595+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 4
+Got {@timestamp=2019-01-04T12:30:50.595Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 4, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:51.557+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6541986
+Got {@timestamp=2019-01-04T12:30:51.557Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6541986, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:51.557+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				User_Status_Report:  UserId:- 6541986 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE
+Got {@timestamp=2019-01-04T12:30:51.557Z, level=INFO, bytes=87, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=User_Status_Report:  UserId:- 6541986 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:51.558+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 16
+Got {@timestamp=2019-01-04T12:30:51.558Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 16, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:52.405+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6542171
+Got {@timestamp=2019-01-04T12:30:52.405Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6542171, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:52.406+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 10
+Got {@timestamp=2019-01-04T12:30:52.406Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 10, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:53.461+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6542351
+Got {@timestamp=2019-01-04T12:30:53.461Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6542351, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:53.462+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				User_Status_Report:  UserId:- 6542351 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE
+Got {@timestamp=2019-01-04T12:30:53.462Z, level=INFO, bytes=87, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=User_Status_Report:  UserId:- 6542351 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:53.463+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 28
+Got {@timestamp=2019-01-04T12:30:53.463Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 28, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:54.474+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6542510
+Got {@timestamp=2019-01-04T12:30:54.474Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6542510, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:54.475+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 5
+Got {@timestamp=2019-01-04T12:30:54.475Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 5, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:55.220+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6542662
+Got {@timestamp=2019-01-04T12:30:55.220Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6542662, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:55.221+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				User_Status_Report:  UserId:- 6542662 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE
+Got {@timestamp=2019-01-04T12:30:55.221Z, level=INFO, bytes=87, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=User_Status_Report:  UserId:- 6542662 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:55.222+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 2
+Got {@timestamp=2019-01-04T12:30:55.222Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 2, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:55.989+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6542840
+Got {@timestamp=2019-01-04T12:30:55.989Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6542840, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:55.990+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 2
+Got {@timestamp=2019-01-04T12:30:55.990Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 2, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:56.698+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6542987
+Got {@timestamp=2019-01-04T12:30:56.698Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6542987, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:56.699+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 1
+Got {@timestamp=2019-01-04T12:30:56.699Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 1, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:57.501+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6543254
+Got {@timestamp=2019-01-04T12:30:57.501Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6543254, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:57.502+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 0
+Got {@timestamp=2019-01-04T12:30:57.502Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 0, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:58.684+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6543601
+Got {@timestamp=2019-01-04T12:30:58.684Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6543601, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:00:58.685+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 0
+Got {@timestamp=2019-01-04T12:30:58.685Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 0, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:00.070+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6543849
+Got {@timestamp=2019-01-04T12:31:00.070Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6543849, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:00.071+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 1
+Got {@timestamp=2019-01-04T12:31:00.071Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 1, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:01.098+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6544054
+Got {@timestamp=2019-01-04T12:31:01.098Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6544054, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:01.099+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 10
+Got {@timestamp=2019-01-04T12:31:01.099Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 10, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:01.790+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6544374
+Got {@timestamp=2019-01-04T12:31:01.790Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6544374, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:01.791+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 4
+Got {@timestamp=2019-01-04T12:31:01.791Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 4, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:02.645+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6545012
+Got {@timestamp=2019-01-04T12:31:02.645Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6545012, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:02.646+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				User_Status_Report:  UserId:- 6545012 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE
+Got {@timestamp=2019-01-04T12:31:02.646Z, level=INFO, bytes=87, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=User_Status_Report:  UserId:- 6545012 UserStatusLegacy:- ACTIVE UserStatusAuth:- ACTIVE, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:02.647+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 2
+Got {@timestamp=2019-01-04T12:31:02.647Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 2, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:03.589+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6545273
+Got {@timestamp=2019-01-04T12:31:03.589Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6545273, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:03.590+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 2
+Got {@timestamp=2019-01-04T12:31:03.590Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 2, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:04.111+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6545418
+Got {@timestamp=2019-01-04T12:31:04.111Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6545418, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:04.112+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 19
+Got {@timestamp=2019-01-04T12:31:04.112Z, level=INFO, bytes=27, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 19, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:04.866+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6545617
+Got {@timestamp=2019-01-04T12:31:04.866Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6545617, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:04.867+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Guest Users Filtered are 0
+Got {@timestamp=2019-01-04T12:31:04.867Z, level=INFO, bytes=26, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Guest Users Filtered are 0, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:05.797+0530 [pool-1-thread-1] INFO  com.egencia.service.sync.worker.ProfileSyncWorker -
+				Processing start for UserId  6545832
+Got {@timestamp=2019-01-04T12:31:05.797Z, level=INFO, bytes=36, logger=com.egencia.service.sync.worker.ProfileSyncWorker, thread=pool-1-thread-1, text=Processing start for UserId  6545832, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:05.798+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				Read/Write Stats for Lambda. Read 30 write 0
+Got {@timestamp=2019-01-04T12:31:05.798Z, level=INFO, bytes=44, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=Read/Write Stats for Lambda. Read 30 write 0, machine_name=DELC02X50JJJG5L}
+2019-01-04T18:01:05.810+0530 [main] INFO  com.egencia.service.executor.BatchExecutor -
+				Exit status:0
+Got {@timestamp=2019-01-04T12:31:05.810Z, level=INFO, bytes=13, logger=com.egencia.service.executor.BatchExecutor, thread=main, text=Exit status:0, machine_name=DELC02X50JJJG5L}
